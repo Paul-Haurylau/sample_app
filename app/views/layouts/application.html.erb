@@ -8,7 +8,21 @@
 </head>
 <body>
 
-<%= yield %>
+<div class="container-narrow">
+
+  <%= render 'layouts/header' %>
+
+  <hr>
+
+  <div class="jumbotron">
+    <%= yield %>
+  </div>
+
+  <hr>
+
+  <%= render 'layouts/footer' %>
+
+</div>
 
 </body>
 </html>
