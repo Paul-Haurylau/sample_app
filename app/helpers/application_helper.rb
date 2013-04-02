@@ -7,4 +7,8 @@ module ApplicationHelper
       return base_url + @title
     end
   end
+
+  def active_item_menu(page)
+    'active' if current_page?(page)
+  end
 end
