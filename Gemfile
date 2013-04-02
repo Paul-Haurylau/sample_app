@@ -8,6 +8,7 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier', '>= 1.0.3'
   gem 'twitter-bootstrap-rails', '2.1.3'
+  gem 'gravatar_image_tag'
 end
 
 group :development do
@@ -18,6 +19,7 @@ end
 group :development, :test do
   gem 'rspec-rails'
   gem 'webrat'
+  gem 'factory_girl_rails'
 end
 
 group :production do
