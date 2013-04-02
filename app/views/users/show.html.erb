@@ -1,1 +1,4 @@
-Name: <%= @user.name %>  Email: <%= @user.email %>
+<h3>
+  <%= gravatar_for @user %>
+  <%= @user.name %>
+</h3>
