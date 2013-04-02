@@ -11,6 +11,11 @@
 <div class="container-narrow">
 
   <%= render 'layouts/header' %>
+    <div>
+      <% flash.each do |key, value| %>
+        <div class="alert alert-<%= key %>"><%= value %></div>
+      <% end %>
+    </div>
 
   <hr>
 

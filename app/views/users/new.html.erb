@@ -1,2 +1,23 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+<h3>New user</h3>
+
+<%= form_for(@user) do |f| %>
+  <%= render 'shared/error_messages' %>
+
+  <div>
+    <%= f.text_field :name, placeholder: 'Name' %>
+  </div>
+
+  <div>
+    <%= f.text_field :email, placeholder: 'Email' %>
+  </div>
+
+  <div>
+    <%= f.password_field :password, placeholder: 'Password' %>
+  </div>
+  <div>
+    <%= f.password_field :password_confirmation, placeholder: 'Password confirmation' %>
+  </div>
+  <div>
+    <%= f.button 'Sign up', class: 'btn-danger' %>
+  </div>
+<% end %>
